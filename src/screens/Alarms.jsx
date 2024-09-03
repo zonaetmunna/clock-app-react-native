@@ -3,7 +3,7 @@ import Feather from '@expo/vector-icons/Feather';
 
 import React, { useState } from 'react';
 import { Modal, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import useDarkMode from '../src/hooks/useDarkMode'; // Adjust the import path as necessary
+import useDarkMode from '../hooks/useDarkMode';
 
 const Alarms = () => {
 	const { isDarkMode } = useDarkMode();
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
 	},
 	cancelButton: {
 		backgroundColor: 'red',
-		borderRadius: 8,
+		borderRadius: 20,
 		padding: 12,
 	},
 	cancelButtonLabel: {

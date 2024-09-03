@@ -3,14 +3,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 import FlashMessage from 'react-native-flash-message';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Navigation from './navigation';
 import { DarkModeProvider } from './src/context/DarkModeContext';
+import Navigation from './src/navigation';
 
 export default function App() {
 	let [fontsLoaded] = useFonts({
-		'Manrope-Bold': require('./assets/fonts/Manrope-Bold.ttf'),
-		'Manrope-Regular': require('./assets/fonts/Manrope-Regular.ttf'),
-		'Manrope-Medium': require('./assets/fonts/Manrope-Medium.ttf'),
+		'Manrope-Bold': require('./src/assets/fonts/Manrope-Bold.ttf'),
+		'Manrope-Regular': require('./src/assets/fonts/Manrope-Regular.ttf'),
+		'Manrope-Medium': require('./src/assets/fonts/Manrope-Medium.ttf'),
 	});
 	if (!fontsLoaded) {
 		return null;

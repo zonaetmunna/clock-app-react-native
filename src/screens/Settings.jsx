@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import useDarkMode from '../src/hooks/useDarkMode';
+import useDarkMode from '../hooks/useDarkMode';
 
 const Settings = () => {
 	const { isDarkMode, toggleDarkMode } = useDarkMode();

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import useDarkMode from '../src/hooks/useDarkMode';
+import useDarkMode from '../hooks/useDarkMode';
 
 const Timer = () => {
 	const { isDarkMode } = useDarkMode();
